@@ -50,6 +50,11 @@ ul {
   width: 68px;
 }
 
+/* to show/hide form */
+.hidden {
+  display: none !important;
+}
+
 .fact-form {
   background: #44403c;
   margin-bottom: 40px;

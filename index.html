@@ -28,19 +28,19 @@
           <h1>Today I Learned</h1>
         </div>
         <!-- button to open user input form -->
-        <button class="btn btn-large">share a fact</button>
+        <button class="btn btn-large btn-open">share a fact</button>
       </header>
 
       <!-- user input form -->
-      <form class="fact-form" action="">
+      <form class="fact-form hidden" action="">
         <input type="text" placeholder="share a fact with the world..." />
         <span>200</span>
         <input type="text" placeholder="trustworthy source..." />
-        <select name="" id="">
-          <option value="">-- choose category --</option>
+        <select name="" id="" class="drop-down-option">
+          <!-- <option value="">-- choose category --</option>
           <option value="technology">Technology</option>
           <option value="society">Society</option>
-          <option value="science">Science</option>
+          <option value="science">Science</option> -->
         </select>
         <button class="btn btn-large">post</button>
       </form>
@@ -49,8 +49,8 @@
       <main class="main">
         <!-- side-bar / menu buttons -->
         <aside>
-          <ul>
-            <li class="category">
+          <ul class="side-menu">
+            <!-- <li class="category">
               <button class="btn btn-all-categories">All</button>
             </li>
             <li class="category">
@@ -62,13 +62,13 @@
               <button class="btn btn-category" style="background: #eab308">
                 Society
               </button>
-            </li>
+            </li> -->
           </ul>
         </aside>
 
         <!-- facts / descriptions section -->
         <section>
-          <ul>
+          <ul class="fact-list">
             <li class="fact">
               <p>
                 <!-- fact / description -->
@@ -81,52 +81,8 @@
                   >(Source)</a
                 >
               </p>
-              <!-- categpory -->
+              <!-- category -->
               <span class="tag" style="background: #3b82f6">technology</span>
-              <div class="vote-buttons">
-                <!-- voting buttons -->
-                <button>👍 24</button>
-                <button>🤯 9</button>
-                <button>👎 2</button>
-              </div>
-            </li>
-            <li class="fact">
-              <p>
-                <!-- fact / description -->
-                Millennial dads spend 3 times as much time with their kids than
-                their fathers spent with them. In 1982, 43% of fathers had never
-                changed a diaper. Today, that number is down to 3%
-                <!-- link to source of the fact -->
-                <a
-                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
-                  target="_blank"
-                  class="source"
-                  >(Source)</a
-                >
-              </p>
-              <!-- categpory -->
-              <span class="tag" style="background: #eab308">society</span>
-              <div class="vote-buttons">
-                <!-- voting buttons -->
-                <button>👍 24</button>
-                <button>🤯 9</button>
-                <button>👎 2</button>
-              </div>
-            </li>
-            <li class="fact">
-              <p>
-                <!-- fact / description -->
-                Lisbon is the capital of Portugal
-                <!-- link to source of the fact -->
-                <a
-                  href="https://en.wikipedia.org/wiki/Lisbon"
-                  target="_blank"
-                  class="source"
-                  >(Source)</a
-                >
-              </p>
-              <!-- categpory -->
-              <span class="tag" style="background: #eab308">society</span>
               <div class="vote-buttons">
                 <!-- voting buttons -->
                 <button>👍 24</button>
@@ -138,5 +94,8 @@
         </section>
       </main>
     </div>
+
+    <!-- custom js -->
+    <script src="./script.js"></script>
   </body>
 </html>
